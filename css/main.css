@@ -12,6 +12,9 @@ body {
 #mainAlert:hover {
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
+#greenDank {
+  color: #4CAF50;
+}
 .footer {
   color: white;
   position: fixed;
@@ -19,4 +22,12 @@ body {
   width: 100%;
   padding: 16px 10px 12px 10px;
   bottom: 0;
+}
+.footer > h6 {
+  font-size: 15px;
+  margin: 0;
+}
+.footer > p {
+  font-size: 10px;
+  margin: 0;
 }
