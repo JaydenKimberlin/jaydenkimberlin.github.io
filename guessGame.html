@@ -12,11 +12,10 @@
 </head>
 
 <body>
-	Testing by: John + Kimani
+	Testing by: Jayden Kimberlin, John de Shano, Kimani
 	<p id="tries"></p>
 	<p id="score"></p>
-	<p id="random"></p>
-	<p id="RNumber"></p>
+	<p id="output"></p>
 	<p id="highLow"></p>
 	<p id="gameOver"></p>
 	<button onclick="questionInput()">Start Game</button>
@@ -30,9 +29,9 @@
 		/* 
 		// Part a:  
 		Programmer: Jayden & Darius
-		Date Last Modified: 10/29
+		Date Last Modified: 10/29/18 - 10/30/18
 		Goal/Purpose: Make this bad boi work!!
-		Status: WIp
+		Status: WIP
 		
 		// Part b: Add comments with details/explanations throughout the code as needed
 		// If you had to do some 'good thinking' or get help to solve something, it deserves a comment!
@@ -42,29 +41,31 @@
 
 		// Variables section
 		var score = 0; // Declares score variable
-		var tries = 3;
+		var tries = 6;
 		var answer = Math.floor(Math.random() * 100); // Generates random number to be answer
 		function questionInput() {
 			var input = prompt("Guess 0 - 100!"); // Window for input
 
 			if (input == answer) { // If input is equal to answer then...
-				document.getElementById("random").innerHTML = "You guessed the right answer!"; // Right answer
-				document.getElementById("RNumber").innerHTML = answer; // Displays the right answer.
-				if (input == answer) {
-					document.getElementById("highLow").innerHTML = "Just right!";
-				}
+				document.getElementById("output").innerHTML = "You guessed the right answer! The answer was " + answer + "."; // Right answer
 				score++; // Score gets added 
-			} else {
-				document.getElementById("RNumber").innerHTML = " Wrong answer! You picked: " + input + ", " + "Try again!";
+			} else { // or else...
+				document.getElementById("output").innerHTML = "Wrong answer! You picked: " + input + ", " + "Try again!"; //say you're wrong, try it again
 				tries--; // subtracts remaining tries
-				if (input < answer) {
-					document.getElementById("highLow").innerHTML = "Too low!"; // Tells if score is too low
-				} else {
-					document.getElementById("highLow").innerHTML = "Too high!"; // Tells if score is too high
-				}
 			}
+			
+			if (input < answer) {
+				document.getElementById("highLow").innerHTML = "Too low!"; // Tells if score is too low
+			} else if (input > answer) {
+				document.getElementById("highLow").innerHTML = "Too high!"; // Tells if score is too high
+			} else if (input == answer) {
+				document.getElementById("highLow").innerHTML = "Just right!"; //Just right!
+			} else if (input !== answer) {
+				document.getElementById("highLow").innerHTML = "Hey thats not a number!";
+			}	
+
 			if (tries == 0) {
-				document.getElementById("gameOver").innerHTML = "You tried! The correct answer was... " + answer;
+				document.getElementById("gameOver").innerHTML = "Game over! You tried, the correct answer was: " + answer;
 				score--;
 			}
 			document.getElementById("score").innerHTML = "Score = " + score; // Displays score 

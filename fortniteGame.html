@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>guessinggame</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto');
+
+        body {
+            font-family: "Roboto";
+            background-color: #333;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        p {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Fortnite Guessing Game</h1>
+    <p id="score"></p>
+    <p id="answerOne"></p>
+    <div id="div1"><p>Whats a popular Fortnite Dance? <button onclick="qOne()">Answer Here</button></p></div>
+    <div id="div2"><p>Who made Fortnite? <button onclick="qTwo()">Answer Here</button></p></div>
+    <script>
+        var score = 0;
+        document.getElementById("score").innerHTML = "Score = ", score;
+        function qOne() {
+            var input = prompt("What's a popular Fortnite dance?", "Answer here");
+            answers = ["Floss", "The Floss"];
+            correct = false;
+
+            for (var i = 0; i < answers.length; i++) {
+                if (answers[i].toLowerCase() == input.toLowerCase()) {
+                    correct = true;
+                    document.getElementById("div1").style.visibility = "hidden";
+                }
+            }
+
+            if (correct) {
+                document.getElementById("answerOne").innerHTML = "Correct! +1";
+                score++;
+            } else {
+                document.getElementById("answerOne").innerHTML = "Wrong, -1";
+                score--;
+            }
+            document.getElementById("score").innerHTML = score;
+        }
+
+        function qTwo() {
+            var input = prompt("Who made Fortnite?", "Answer Here");
+            answers = ["Epic Games", "People Can Fly"];
+            correct = false;
+
+            for (var i = 0; i < answers.length; i++) {
+                if (answers[i].toLowerCase() == input.toLowerCase()) {
+                    correct = true;
+                    document.getElementById("div2").style.visibility = "hidden";
+                }
+            }
+
+            if (correct) {
+                document.getElementById("answerOne").innerHTML = "Correct! +1";
+                score++;
+            } else {
+                document.getElementById("answerOne").innerHTML = "Wrong, 1";
+                score--;
+            }
+            document.getElementById("score").innerHTML = score;
+        }
+    </script>
+</body>
+
+</html>
