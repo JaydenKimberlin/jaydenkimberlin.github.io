@@ -5,36 +5,81 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio | Jayden Kimberlin &copy; 2018</title>
     <link rel="shortcut icon" href="src/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 </head>
 
 <body>
     <!-- Navbar -->
     <div class="navBar">
-        <a href="#" class="logo"><img height="30px" src="src/favicon.png" alt="jaydenkimberlin"></a>
-        <a href="#" class="navItem">About Me</a>
-        <a href="#currentProjects">Projects</a>
-        <a href="#education">Education</a>
-        <a href="https://twitter.com/jaydenkimberlin" class="navItem navSocial">Twitter</a>
+        <a href="index.html" class="logo"><img height="30px" src="src/favicon.png" alt="jaydenkimberlin"></a>
+        <a href="https://github.com/jaydenkimberlin" target="_blank"><img src="src/GitHub-Mark-64px.png" height="28px" alt="githubIcon"></a>
+        <a href="#about" class="navItem">About Me</a>
+        <!-- <a href="#about" class="navItem">Skills</a> -->
+        <div class="dropdown">
+            <a href="#" class="dropdown-button">Projects</a>
+            <div class="dropdown-menu">
+                <a href="#mtag" class="dropdown-item">MTAG</a>
+                <a href="#guess" class="dropdown-item">Guessing Game</a>
+            </div>
+        </div>
     </div>
 
     <!-- Content -->
     <div class="container">
-        <div class="card">
+        <div id="about" class="card">
             <h2>About Me</h2>
-            <p>Some content goes here</p>
+            <p>
+                I'm Jayden Kimberlin, I'm 17 years old and I'm a senior in Wayne Memorial High School! I'm a graphic
+                designer,
+                web developer, and photographer from Wayne, Michigan. I've been designing since 2012, after my mother
+                graduated Specs
+                Howard. As time progressed, I became more interested in game design and programming, front and back end
+                web development,
+                and with graphic design I also became wrapped up in amateur photography, doing little jobs for people
+                and using it to
+                assist me in my graphic design class at career tech. Ever since then, everything that I've learned and
+                taught myself
+                has really grown into large passions of mine.
+            </p>
         </div>
-        <div id="currentProjects" class="card">
-            <h2>Current Projects</h2>
+
+        <!-- <div id="skills" class="card">
+            <h2>Skills</h2>
+        </div> -->
+
+        <div id="mtag" class="card">
+            <h3>MTAG Game</h3>
+            <p>
+                The MTAG game the bigger game we developed in Game Design and Programming. We initally had no clue
+                what to call it, so we just called the game "Life: The Game", because this is truly just life.
+                If a player plays this game, and has never played it before, I believe it would be very simple to catch
+                on.
+                I designed the game with my classmates to be really easy to catch onto and play.
+            </p>
+            <div class="row">
+                <div class="col-6">
+                    <img src="src/mtagScreenshot1.jpg" width="100%" alt="">
+                </div>
+                <div class="col-6">
+                    <img src="src/mtagScreenshot2.jpg" width="100%" alt="">
+                </div>
+            </div>
+            <p>
+                We'd love for you to play the game and give us feedback if possible!
+            </p>
+        </div>
+
+        <div id="guess" class="card">
+            <h2>Other Projects</h2>
             <h3>Guessing Game</h3>
             <p>This game is just about guessing. You guess a number 1-100, and bada bing bada boom, you get the
                 wrong
-                answer because that is a retarded range. It's really really
+                answer because that is a dumb range. It's really really
                 just self explanatory, if you don't know what this is, then just get outta here. If one wasn’t
                 from
                 this class, there’s no explanation needed. You hit the “start
@@ -67,9 +112,6 @@
                 wrong,
                 subtract from your score and attempts, and say if your guess is too high or too low.
             </p>
-            <h4>Here is where you can play bother iterations of the guessing game. Both are unfinished!</h4>
-            <button class="openGame" onclick="playGameOne();">Play Version 1</button>
-            <button class="openGame" onclick="playGameTwo();">Play Version 2</button>
         </div>
         <!-- Footer -->
         <div class="footer">
@@ -79,9 +121,10 @@
             </p>
         </div>
         <!-- Scripts -->
-        <script src="/js/main.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
             crossorigin="anonymous"></script>
+        <script src="/js/main.js"></script>
 
 </body>
 

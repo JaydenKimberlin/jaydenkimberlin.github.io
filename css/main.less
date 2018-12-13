@@ -7,14 +7,16 @@ body {
     margin-top: calc(@navBar-height + 10px);
     a {
         text-decoration: none;
-        color:black;
+        color: black;
         transition: 0.2s ease;
         &:hover {
-            color:gray
+            color: gray
         }
     }
 }
+
 /* Nav */
+
 @navBar-height: 45px;
 .navBar {
     position: fixed;
@@ -29,34 +31,62 @@ body {
     z-index: 1000;
     box-shadow: 0 3px 8px 2px rgba(0, 0, 0, 0.09);
     a {
-        float: left;
-        // color: white;
-        color:black;
+        float: left; // color: white;
+        color: black;
         text-align: center;
         padding: 0 16px;
         text-decoration: none;
         font-size: 17px;
         transition: 0.2s ease;
         &:hover:not(.logo) {
+            background-color: #ffc4ff
+
+            ;
+            color: black;
+        }
+        .active {
             background-color: #c7c7c7;
-            color:black;
+            &:hover {
+                background-color: #ffc4ff
+
+                ;
+            }
         }
         img {
             vertical-align: middle;
         }
     }
-    .navSocial {
-        float:right;
+}
+
+// 
+
+// ask john for help 
+
+
+.dropdown{
+    display: inline-flex;
+    flex-direction: column;
+    .dropdown-menu{
+        display: none;
+        box-shadow: 0 3px 8px 2px rgba(0, 0, 0, 0.09);
+        margin-top: -2px;
+    }
+    &:hover{
+        .dropdown-menu{
+            display: block;
+        }
     }
 }
 
+
 /* Page Content */
+
 .card {
     box-shadow: 0 3px 8px 2px rgba(0, 0, 0, 0.09);
     margin: 10px auto;
     padding: 16px 14px;
-    background-color:white;
-    color:black;
+    background-color: white;
+    color: black;
     border-radius: 3px;
 }
 
@@ -66,17 +96,18 @@ body {
 
 .openGame {
     background-color: #333;
+    width: 20%;
 }
 
 .footer {
     box-shadow: 0 -3px 8px 2px rgba(0, 0, 0, 0.09);
     bottom: 0;
-    background-color:white;
+    background-color: white;
     width: 100%;
     color: black;
     text-align: center;
     padding: 5px 0;
-    p{
+    p {
         padding: 5px 0;
         font-size: 12px;
         line-height: 12px;
