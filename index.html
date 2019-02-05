@@ -10,8 +10,7 @@
     <link rel="shortcut icon" href="src/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"crossorigin="anonymous">
 </head>
 
 <body>
@@ -23,6 +22,7 @@
         <div class="dropdown">
             <a href="#" class="dropdown-button">Projects</a>
             <div class="dropdown-menu">
+                <a href="#fishpod" class="dropdown-item">Fishpod</a>
                 <a href="#mtag" class="dropdown-item">MTAG</a>
                 <a href="#guess" class="dropdown-item">Guessing Game</a>
             </div>
@@ -40,31 +40,53 @@
         <!-- About and Skills Card-->
         <h1 id="about" class="title">About</h1>
         <div class="card">
-            <div class="aboutFlex">
-                <div class="aboutImage">
-                    <img class="aboutImage" src="src/temp.jpg" width="100%" alt="faceimage">
+            <div class="row">
+                <div class="col">
+                    <div class="aboutFlex">
+                        <div class="aboutImage">
+                            <img class="aboutImage" src="src/temp.jpg" width="100%" alt="faceimage">
+                        </div>
+                        <div class="aboutItems">
+                            <h2><b>Jayden Kimberlin</b></h2>
+                            <p>Graphic Designer | Full Time Student</p>
+                            <p>Wayne Memorial High School '19</p>
+                            <a href="mailto:jayden.kimberlin1@gmail.com">jayden.kimberlin1@gmail.com</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="aboutItems">
-                    <h2><b>Jayden Kimberlin</b></h2>
-                    <p>Graphic Designer | Full Time Student</p>
-                    <p>Wayne Memorial High School '19</p>
-                    <a href="mailto:jayden.kimberlin1@gmail.com">jayden.kimberlin1@gmail.com</a>
+                <div class="col">
+                    <h2>Skills</h2>
+                    <h4>Languages I Know</h4>
+                    <div class="skills">
+                        <div class="row">
+                            <div class="col">
+                                <img src="src/html.png" alt="html">
+                            </div>
+                            <div class="col">
+                                <img src="src/css.png" alt="html">
+                            </div>
+                            <div class="col">
+                                <img src="src/jsFixed.png" alt="html">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+            
         </div>
 
         <h1 id="projects" class="title">Projects</h1>
         <div class="card">
-            <h3>Fishpod</h3>
+            <h3 id="fishpod">Fishpod</h3>
             <div id="fishpodImages" class="row">
                 <div class="col">
-                    <img src="src/fishpodScreenshotOne.PNG" alt="" width="100%">
+                    <img src="src/fishpodScreenshotOne.PNG" alt="fishpodSC1" width="100%">
                 </div>
                 <div class="col">
-                    <img src="src/fishpodScreenshotTwo.PNG" alt="" width="100%"> 
+                    <img src="src/fishpodScreenshotTwo.PNG" alt="fishpodSC2" width="100%"> 
                 </div>
                 <div class="col">
-                    <img src="src/fishpodScreenshotThree.PNG" alt="" width="100%">
+                    <img src="src/fishpodScreenshotThree.PNG" alt="fishpodSC3" width="100%">
                 </div>
             </div>
             <br>
@@ -85,13 +107,11 @@
                     <p>GML</p>
                     <p>DND</p>
 
-                    <h4>Built and Developed with</h4>
+                    <h4>Built and Developed with</h4>   
                     <p>Game Maker Studio 2</p>
                 </div>
             </div>
-            
             <br>
-
             <h3>Background</h3>
             <p>This project came to be after my instructor gave the class a tutorial, which was in DND not GML, and we followed it and created this awful game.</p>
 
@@ -101,8 +121,7 @@
             <p>A few custom sound files in the modifications.</p>
         </div>
         <div class="card">
-
-            <h3>MTAG Game</h3>
+            <h3 id="mtag">MTAG Game</h3>
             <p>
                 The MTAG game the bigger game we developed in Game Design and Programming. We initally had no clue
                 what to call it, so we just called the game "Life: The Game", because this is truly just life.
@@ -123,7 +142,7 @@
                 frequently, so it should be stable. <a href="#">Here</a> is where you can play the game!
             </p>
 
-            <h3>Guessing Game</h3>
+            <h3 id="guess">Guessing Game</h3>
             <p>This game is just about guessing. You guess a number 1-100, and bada bing bada boom, you get the
                 wrong
                 answer because that is a dumb range. It's really really
@@ -161,17 +180,22 @@
             </p>
         </div>
 
-
-
-
         <!-- Footer -->
-        <div class="footer">
-            <p>Jayden Kimberlin &copy; 2018, All Rights Reserved</p>
-            <p>Collaborated with: <a href="http://johndeshano.me" target="_blank">John de Shano</a>, <a href="http://maureenr1987.github.io/MauriciosPortfolio" target="_blank">Mauricio Ramirez</a></p>
-            <p>Last Modified:
-                <script>document.write(document.lastModified)</script>
-            </p>
+        <div class="footer container">
+            <div class="row">
+                <div class="col text-left">
+                        <p>Collaborated with: <a href="http://johndeshano.me" target="_blank">John de Shano</a>, <a href="http://maureenr1987.github.io/MauriciosPortfolio" target="_blank">Mauricio Ramirez</a></p>
+                        <p>Last Modified:
+                            <script>document.write(document.lastModified)</script>
+                        </p>
+                </div>
+                <div class="col text-right">
+                        <p>Jayden Kimberlin &copy; 2018, All Rights Reserved</p>
+                </div>
+            </div>
+            
         </div>
+
         <!-- Scripts -->
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <script src="js/bootstrap.js"></script>

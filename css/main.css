@@ -85,13 +85,19 @@ body a:hover {
   width: 100%;
   color: black;
   text-align: center;
-  padding: 5px 0;
+  padding: 5px 10px 0 10px;
 }
 .footer p {
   padding: 5px 0;
   font-size: 12px;
   line-height: 12px;
   margin: 0;
+}
+.footer .text-left {
+  text-align: left;
+}
+.footer .text-right {
+  text-align: right;
 }
 iframe {
   border-style: solid;
@@ -134,4 +140,7 @@ iframe {
 #btn:hover {
   color: white;
   background-color: #800080;
+}
+.skills img {
+  width: 85%;
 }
