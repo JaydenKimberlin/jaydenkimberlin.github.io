@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 body {
   font-family: 'Roboto';
-  background-color: #c7c7c7;
+  background: white;
   margin: 0;
   padding: 0;
   margin-top: calc(55px);
 }
 body a {
   text-decoration: none;
-  color: black;
+  color: #ae52d4;
   transition: 0.2s ease;
 }
 body a:hover {
-  color: gray;
+  color: #ffc4ff;
 }
 /* Nav */
 .navBar {
@@ -38,18 +38,14 @@ body a:hover {
   transition: 0.2s ease;
 }
 .navBar a:hover:not(.logo) {
-  background-color: #ffc4ff
-
-            ;
+  background-color: #ffc4ff;
   color: black;
 }
 .navBar a .active {
   background-color: #c7c7c7;
 }
 .navBar a .active:hover {
-  background-color: #ffc4ff
-
-                ;
+  background-color: #ffc4ff;
 }
 .navBar a img {
   vertical-align: middle;
@@ -101,4 +97,41 @@ iframe {
   border-style: solid;
   border-width: 2px;
   border-color: black;
+}
+.contactLink {
+  font-size: 30px;
+  padding-left: 20px;
+}
+.aboutFlex {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.aboutItems {
+  padding-left: 20px;
+}
+.aboutImage {
+  border-radius: 50%;
+  max-width: 225px;
+}
+.emphasis {
+  background-color: #ffc4ff;
+  padding: 10px 0px 10px 0;
+}
+.title {
+  text-align: center;
+}
+#btn {
+  background-color: #ffc4ff;
+  text-align: center;
+  width: 100%;
+  border-radius: 3px;
+  color: black;
+  text-decoration: none;
+  padding: 8px 0 8px 0;
+  margin-bottom: 10px;
+  transition: 0.2s ease;
+}
+#btn:hover {
+  color: white;
+  background-color: #800080;
 }

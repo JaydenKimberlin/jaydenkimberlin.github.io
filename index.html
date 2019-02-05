@@ -6,20 +6,20 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio | Jayden Kimberlin &copy; 2018</title>
+    <title>Jayden Kimberlin | Graphic Designer & Student</title>
     <link rel="shortcut icon" href="src/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+        crossorigin="anonymous">
 </head>
 
 <body>
     <!-- Navbar -->
     <div class="navBar">
-        <a href="index.html" class="logo"><img height="30px" src="src/favicon.png" alt="jaydenkimberlin"></a>
-        <a href="https://github.com/jaydenkimberlin" target="_blank"><img src="src/GitHub-Mark-64px.png" height="28px" alt="githubIcon"></a>
+        <a href="https://behance.net/jaydenkimberlin" target="_blank" class="navItem"><img height="30px" src="src/favicon.png" alt="jaydenkimberlin"></a>
+        <a href="https://github.com/jaydenkimberlin" target="_blank"><img src="src/GitHub-Mark-64px.png" height="26px" alt="githubIcon"></a>
         <a href="#about" class="navItem">About Me</a>
-        <!-- <a href="#about" class="navItem">Skills</a> -->
         <div class="dropdown">
             <a href="#" class="dropdown-button">Projects</a>
             <div class="dropdown-menu">
@@ -31,28 +31,77 @@
 
     <!-- Content -->
     <div class="container">
-        <div id="about" class="card">
-            <h2>About Me</h2>
-            <p>
-                I'm Jayden Kimberlin, I'm 17 years old and I'm a senior in Wayne Memorial High School! I'm a graphic
-                designer,
-                web developer, and photographer from Wayne, Michigan. I've been designing since 2012, after my mother
-                graduated Specs
-                Howard. As time progressed, I became more interested in game design and programming, front and back end
-                web development,
-                and with graphic design I also became wrapped up in amateur photography, doing little jobs for people
-                and using it to
-                assist me in my graphic design class at career tech. Ever since then, everything that I've learned and
-                taught myself
-                has really grown into large passions of mine.
-            </p>
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <strong>Hey!</strong> This site is under construction.
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <!-- About and Skills Card-->
+        <h1 id="about" class="title">About</h1>
+        <div class="card">
+            <div class="aboutFlex">
+                <div class="aboutImage">
+                    <img class="aboutImage" src="src/temp.jpg" width="100%" alt="faceimage">
+                </div>
+                <div class="aboutItems">
+                    <h2><b>Jayden Kimberlin</b></h2>
+                    <p>Graphic Designer | Full Time Student</p>
+                    <p>Wayne Memorial High School '19</p>
+                    <a href="mailto:jayden.kimberlin1@gmail.com">jayden.kimberlin1@gmail.com</a>
+                </div>
+            </div>
         </div>
 
-        <!-- <div id="skills" class="card">
-            <h2>Skills</h2>
-        </div> -->
+        <h1 id="projects" class="title">Projects</h1>
+        <div class="card">
+            <h3>Fishpod</h3>
+            <div id="fishpodImages" class="row">
+                <div class="col">
+                    <img src="src/fishpodScreenshotOne.PNG" alt="" width="100%">
+                </div>
+                <div class="col">
+                    <img src="src/fishpodScreenshotTwo.PNG" alt="" width="100%"> 
+                </div>
+                <div class="col">
+                    <img src="src/fishpodScreenshotThree.PNG" alt="" width="100%">
+                </div>
+            </div>
+            <br>
+            <a href="https://drive.google.com/uc?id=1rJHaXpNEt1FwXoyr4IaAfzlP1Mf4BAO6&export=download" target="_blank" id="btn">Download Game</a>
+            <a href="https://drive.google.com/file/d/1WiJtl_QpIUTEYLHWtlHcf7cuLLC45xci&export=download" target="_blank" id="btn">Download Project Files</a>
 
-        <div id="mtag" class="card">
+            <h3>Objective</h3>
+            <p>The objective of this game is to collect all the gold in each level to progress to the next.</p>
+
+            <div class="row emphasis">
+                <div class="col">
+                    <h4>What did I learn making this game?</h4>
+                    <p>How to create state machines</p>
+                    <p>How to mod an existing game in GM</p>
+                </div>
+                <div class="col">
+                    <h4>Languages Used</h4>
+                    <p>GML</p>
+                    <p>DND</p>
+
+                    <h4>Built and Developed with</h4>
+                    <p>Game Maker Studio 2</p>
+                </div>
+            </div>
+            
+            <br>
+
+            <h3>Background</h3>
+            <p>This project came to be after my instructor gave the class a tutorial, which was in DND not GML, and we followed it and created this awful game.</p>
+
+            <h3>Features</h3>
+            <p>Double Jumping!</p>
+            <p>Well made sprites</p>
+            <p>A few custom sound files in the modifications.</p>
+        </div>
+        <div class="card">
+
             <h3>MTAG Game</h3>
             <p>
                 The MTAG game the bigger game we developed in Game Design and Programming. We initally had no clue
@@ -62,20 +111,18 @@
                 I designed the game with my classmates to be really easy to catch onto and play.
             </p>
             <div class="row">
-                <div class="col-6">
+                <div class="col">
                     <img src="src/mtagScreenshot1.jpg" width="100%" alt="">
                 </div>
-                <div class="col-6">
+                <div class="col">
                     <img src="src/mtagScreenshot2.jpg" width="100%" alt="">
                 </div>
             </div>
             <p>
-                We'd love for you to play the game and give us feedback if possible!
+                We'd love for you to play the game and give us feedback if possible! This game has been updated
+                frequently, so it should be stable. <a href="#">Here</a> is where you can play the game!
             </p>
-        </div>
 
-        <div id="guess" class="card">
-            <h2>Other Projects</h2>
             <h3>Guessing Game</h3>
             <p>This game is just about guessing. You guess a number 1-100, and bada bing bada boom, you get the
                 wrong
@@ -113,17 +160,21 @@
                 subtract from your score and attempts, and say if your guess is too high or too low.
             </p>
         </div>
+
+
+
+
         <!-- Footer -->
         <div class="footer">
             <p>Jayden Kimberlin &copy; 2018, All Rights Reserved</p>
+            <p>Collaborated with: <a href="http://johndeshano.me" target="_blank">John de Shano</a>, <a href="http://maureenr1987.github.io/MauriciosPortfolio" target="_blank">Mauricio Ramirez</a></p>
             <p>Last Modified:
                 <script>document.write(document.lastModified)</script>
             </p>
         </div>
         <!-- Scripts -->
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" cossorigin="anonymous"></script>
         <script src="/js/main.js"></script>
 
 </body>
