@@ -8,11 +8,8 @@ body {
 }
 body a {
   text-decoration: none;
-  color: #ae52d4;
+  color: #b300ff;
   transition: 0.2s ease;
-}
-body a:hover {
-  color: #ffc4ff;
 }
 /* Nav */
 .navBar {
